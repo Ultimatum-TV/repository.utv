@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.program.utv"
+	   name="Ultimatum-TV Installer"
+	   version="2017"
+	   provider-name="Steindenaer (Ultimatum.TV)">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Ultimatum TV</summary>
+    <description lang="en">Ultimatum TV allows you to get access to the latest Ultimatum Custom Builds. Cleaning, backup, and maintenance tools. Easy to use for anyone.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.utv-elysium" version="2017.06.10a" name="Elysium" provider-name="Steindenaer (Ultimatum-TV) ">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="script.utv-elysium.artwork"/>
+		<import addon="script.module.urlresolver"/>
+		<import addon="script.module.metahandler"/>
+		<import addon="script.module.requests"/>
+		<import addon="script.module.beautifulsoup"/>
+		<import addon="script.module.ultimatum.common"/>
+		<import addon="script.module.futures"/>
+		<import addon="script.module.nanscrapers"  version="0.5.20" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="Elysium.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Elysium -fork movies and TV shows</summary>
+		<description lang="en">Watch movies and TV shows in high quality! Please note that this addon is not an official part of the Kodi media player, and therefore not to be mentioned within official support channels. This addon has nothing to do with the media player itself, nor it’s intended use, it is simply a third party plugin which has been added to your system.</description>
+		<disclaimer lang="en">The author does not host or share any content, nor is heaffiliated with any of the content providers.</disclaimer>
+		<platform>all</platform>
+		<news>Elysium -fork by Ultimatum-TV</news>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/01.jpg</screenshot>
+			<screenshot>resources/screenshots/02.jpg</screenshot>
+			<screenshot>resources/screenshots/03.jpg</screenshot>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.utv"
+	name="Ultimatum-TV's Repository"
+	version="2017"
+	provider-name="Steindenaer by Ultimatum.TV">
+	<extension point="xbmc.addon.repository"
+		 name="Ultimatum-TV's Repository">
+			<info compressed="false">http://repository.ultimatum.tv/master/addons/Ultimatum-addons.xml</info>
+			<checksum>http://repository.ultimatum.tv/master/addons/Ultimatum-addons.xml.md5</checksum>
+			<datadir zip="true">http://repository.ultimatum.tv/master/zips/</datadir>
+		</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Ultimatum-TV's Repository</summary>
+		<summary lang="nl">Ultimatum-TV's Repository</summary>
+		<description lang="en">This is my repository. I can and will do whatever I want with it. Some stuff in here can and will overwrite allready installed addons. If you do not want that, do not install this repo!</description>
+		<description lang="nl">Dit is mijn depot. Ik kan hiermee doen en laten wat ik wil. Sommige dingen in dit depot kunnen en zullen reeds geinstalleerde addons overschrijven. Als je dat niet wil, installeer dit depot dan niet!</description>
+		<disclaimer lang="en">Ultimatum-TV did not make all the add-ons in this repository and is in no way responsible for their content.</disclaimer>
+		<disclaimer lang="nl">Ultimatum-TV heeft niet alle add-ons in dit depot gemaakt en is ook op geen enkele manier verantwoordelijk voor hun inhoud.</disclaimer>
+		<platform>all</platform>
+		<website>https://www.ultimatum.tv</website>
+		<source>http://install.ultimatum.tv</source>
+		<email>kodi@ultimatum.tv</email>
+	</extension>
+</addon>
+
+<addon id="script.module.nanscrapers" name="NaN Scrapers" version="0.5.20" provider-name="Team NaN">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.beautifulsoup" version="3.2.1"/>
+        <import addon="script.module.futures" version="2.2.0"/>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.six"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.python.pluginsource" library="lib/default.py">
+        <provides>executable</provides>
+    </extension>
+    <import addon="script.module.urlresolver" version="3.0.0" optional="true"/>
+    <import addon="script.mrknow.urlresolver" version="2016.10.30.2" optional="true"/>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Scrape common video host for URL's to be playable in XBMC/Kodi.</summary>
+        <description lang="en">Scrape common video host for URL's to be playable in XBMC/Kodi, simplifying addon development of video plugins requiring multi video hosts.
+        </description>
+        <license>GPL v3</license>
+        <source>https://github.com/noobsandnerds/noobsandnerds/tree/master/script.module.nanscrapers</source>
+        <forum>http://www.noobsandnerds.com/support/showthread.php?tid=17212</forum>
+        <website>http://noobsandnerds.com</website>
+    </extension>
+</addon>
+
+<addon id="script.module.ultimatum.common" name="Ultimatum Common Libraries" version="2017.05.07" provider-name="Steindenaer">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.six" />
+		<import addon="script.module.metahandler" />
+		<import addon="script.module.beautifulsoup" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Collection of modules used by Ultimatum Addons</summary>
+		<description lang="en">Collection of modules used by Ultimatum Addons</description>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+	</extension>
+</addon>
+
+<addon id="script.module.urlresolver" name="URLResolver" version="3.0.29" provider-name="tvaddons.ag, Eldorado">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+	</extension>
+</addon>
+
+<addon id="script.utv-elysium.artwork" version="2017" name="Elysium Artwork" provider-name="Steindenaer (Ultimatum-TV)">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the Elysium Addon</summary>
+		<description></description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="service.subtitles.utv-opensubs"
+       name="Ultimatum-TV OpenSubs(Unofficial)"
+       version="2017"
+       provider-name="Steindenaer (Ultimatum-TV)">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.subtitle.module"
+             library="service.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">OpenSubtitles (Unofficial)</summary>
+    <description lang="en">Search and download subtitles from opensubtitles.org. This unofficial version permits to choose preference language in results</description>
+    	<disclaimer lang="en">This addon uses the offical subs from OpenSubtitles without the need to loginT</disclaimer>
+
+    <description lang="nl">Zoek en download ondertitels van opensubtitles.org. Deze niet-officiële versie maakt het mogelijk om de voorkeurstaal in de resultaten te kiezen</description>
+    	<disclaimer lang="nl">Deze addon maakt gebruik van de offical subs van OpenSubtitles zonder dat u zich hoeft in te loggen</disclaimer>
+    		<summary lang="nl">OpenSubtitles (Onofficieel)</summary>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <source>https://github.com/Mafarricos/service.subtitles.opensubtitles</source>
+  </extension>
+</addon>
+</addons>
