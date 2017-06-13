@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.utv"                                                                                                                                    
+	   name="Ultimatum-TV Installer"                                                 
+	   version="2017"                                                                                                                                        
+	   provider-name="Steindenaer (Ultimatum-TV)">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Ultimatum TV</summary>
+    <description lang="en">Ultimatum TV allows you to get access to the latest Ultimatum Custom Builds. Cleaning, backup, and maintenace tools. Free and easy to use for anyone.</description>
+    <platform>all</platform>
+  </extension>
+</addon>

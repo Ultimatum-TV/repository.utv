@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.utv" name=" [COLOR tan][B]Ultimatum-TV's Repository" version="2017.06" provider-name="Steindenaer | Ultimatum-TV">
+	<extension point="xbmc.addon.repository" name=" [COLOR tan][B]Ultimatum-TV's Repository">
+		<dir>
+			<info compressed="false">http://2017.ultimatum.tv/xml/Ultimatum-addons.xml</info>
+			<checksum>http://2017.ultimatum.tv/xml/Ultimatum-addons.xml.md5</checksum>
+			<datadir zip="true">http://2017.ultimatum.tv/zips/</datadir>
+			<hashes>false</hashes>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/Ultimatum-TV/repository.utv/master/xml/Ultimatum-addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Ultimatum-TV/repository.utv/master/xml/Ultimatum-addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Ultimatum-TV/repository.utv/master/zips/</datadir>
+			<hashes>false</hashes>
+		</dir>
+		
+	
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Ultimatum-TV's Repository</summary>
+		<summary lang="nl">Ultimatum-TV's Repository</summary>
+
+		<description lang="en">Ultimatum-TV's Repository | be sure to check out our Facebook-page: http://bit.ly/Ultimatum-TV  !!! USE AT YOUR OWN RISK !!!</description>
+		<description lang="nl">Ultimatum-TV's Repository | en volg zeker ook onze Facebook pagina: http://bit.ly/Ultimatum-TV  !!! GEBRUIK OP EIGEN RISICO !!!</description>
+
+		<disclaimer lang="en">The owners and submitters to this repository do not host or distribute any of the content displayed by these add-ons nor do they have any affiliation with its content. Please Read: https://raw.githubusercontent.com/Ultimatum-TV/repository.utv/master/LICENSE ...just because you can  ;)  !!! USE AT YOUR OWN RISK !!!</disclaimer>
+		<disclaimer lang="nl">De eigenaren en moderators van deze repository hosten of distributeert geen enkele content die word weergegeven in deze addons. Ook hebben ze geen enkele aansluiting op deze addons. Lees a.u.b: https://raw.githubusercontent.com/Ultimatum-TV/repository.utv/master/LICENSE ... gewoon omdat het kan  ;)  !!! GEBRUIK OP EIGEN RISICO !!!</disclaimer>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.facebook.com/groups/UltimatumTV.Entertainment.Redefined/</forum>
+		<website>http://bit.ly/Ultimatum-TV</website>
+		<source>http://2017.ultimatum.tv/</source>
+	</extension>
+</addon>

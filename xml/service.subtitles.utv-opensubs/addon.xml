@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="service.subtitles.utv-opensubs"
+       name="Ultimatum-TV OpenSubs(Unofficial)"
+       version="2017"
+       provider-name="Steindenaer (Ultimatum-TV)">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.subtitle.module"
+             library="service.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">OpenSubtitles (Unofficial)</summary>
+    <description lang="en">Search and download subtitles from opensubtitles.org. This unofficial version permits to choose preference language in results</description>
+    	<disclaimer lang="en">This addon uses the offical subs from OpenSubtitles without the need to loginT</disclaimer>
+    		
+    <description lang="nl">Zoek en download ondertitels van opensubtitles.org. Deze niet-officiële versie maakt het mogelijk om de voorkeurstaal in de resultaten te kiezen</description>
+    	<disclaimer lang="nl">Deze addon maakt gebruik van de offical subs van OpenSubtitles zonder dat u zich hoeft in te loggen</disclaimer>	
+    		<summary lang="nl">OpenSubtitles (Onofficieel)</summary>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <source>https://github.com/Mafarricos/service.subtitles.opensubtitles</source>    
+  </extension>
+</addon>
